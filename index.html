@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aristeu Vedoy · Massoterapeuta em Curitiba | +40 anos de experiência</title>
+<meta name="description" content="Aristeu Vedoy, massoterapeuta em Curitiba desde 1983. Massoterapia, quiropraxia, tratamento de coluna, torcicolo, dor muscular e antiestresse. Rua Pedro Hansaul, 161, Portão.">
+<meta name="author" content="Aristeu Vedoy">
+<meta property="og:title" content="Aristeu Vedoy · Massoterapeuta em Curitiba">
+<meta property="og:description" content="Mais de 40 anos de experiência em massoterapia, quiropraxia e tratamento de coluna em Curitiba.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#7c9082;          /* verde-sálvia */
+  --sage-dark:#5f7266;     /* verde-sálvia escuro */
+  --sage-deep:#41504a;     /* verde profundo (textos/rodapé) */
+  --sand:#f4efe6;          /* areia/off-white */
+  --sand-2:#ece5d8;        /* areia mais quente */
+  --cream:#faf7f1;         /* creme */
+  --ink:#33403a;           /* texto principal */
+  --muted:#6d7a72;         /* texto secundário */
+  --white:#ffffff;
+  --shadow:0 8px 30px rgba(65,80,74,.10);
+  --shadow-lg:0 18px 50px rgba(65,80,74,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter',-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.2;color:var(--sage-deep);}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1120px;margin:0 auto;padding:0 24px;}
+.section{padding:96px 0;}
+.eyebrow{
+  font-family:'Inter',sans-serif;font-size:.78rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:14px;
+}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:18px 0;transition:all .35s ease;
+  background:rgba(250,247,241,.0);
+}
+nav.scrolled{background:rgba(250,247,241,.95);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(65,80,74,.08);padding:12px 0;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;flex-direction:column;line-height:1.05;}
+.nav-logo .name{font-family:'Fraunces',serif;font-size:1.28rem;font-weight:600;color:var(--sage-deep);}
+.nav-logo .role{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sage);margin-top:3px;}
+nav:not(.scrolled) .nav-logo .name{color:var(--white);}
+nav:not(.scrolled) .nav-logo .role{color:rgba(255,255,255,.85);}
+.nav-links{display:flex;gap:34px;align-items:center;}
+.nav-links a{font-size:.92rem;font-weight:500;color:var(--white);opacity:.92;transition:opacity .2s;}
+nav.scrolled .nav-links a{color:var(--ink);}
+.nav-links a:hover{opacity:1;}
+.nav-cta{
+  background:var(--sage);color:var(--white)!important;padding:10px 20px;border-radius:40px;
+  font-weight:600;opacity:1!important;transition:background .25s,transform .2s;
+}
+.nav-cta:hover{background:var(--sage-dark);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:.3s;}
+nav.scrolled .hamburger span{background:var(--ink);}
+
+/* HERO */
+.hero{
+  position:relative;min-height:100vh;display:flex;
+  align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#5f7266 0%,#41504a 100%);
+  padding:120px 0 60px;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%,rgba(124,144,130,.35),transparent 55%);
+  pointer-events:none;
+}
+.hero-inner{max-width:980px;margin:0 auto;padding:0 24px;width:100%;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:center;position:relative;z-index:2;}
+.hero-left .eyebrow{color:#c8d3cb;}
+.hero-left h1{color:var(--white);font-size:clamp(2.4rem,5vw,3.7rem);font-weight:600;margin-bottom:22px;}
+.hero-left h1 span{color:#c3d1c7;display:block;font-size:.62em;font-weight:400;margin-top:10px;}
+.hero-left p{color:rgba(255,255,255,.9);font-size:1.12rem;max-width:520px;margin-bottom:32px;font-weight:300;}
+.hero-badges{display:flex;gap:28px;margin-bottom:36px;flex-wrap:wrap;}
+.hero-badge{color:var(--white);}
+.hero-badge .num{font-family:'Fraunces',serif;font-size:2rem;font-weight:600;color:#c8d3cb;}
+.hero-badge .lbl{font-size:.82rem;color:rgba(255,255,255,.8);letter-spacing:.04em;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:44px;
+  font-weight:600;font-size:.98rem;transition:transform .2s,box-shadow .25s,background .25s;cursor:pointer;border:none;
+}
+.btn-primary{background:var(--white);color:var(--sage-deep);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.22);}
+.btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.55);}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--white);}
+.hero-photo{position:relative;max-width:340px;}
+.hero-photo img{
+  width:100%;border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,.35);
+  object-fit:cover;aspect-ratio:3/4;object-position:center 22%;
+}
+.hero-photo .frame{
+  position:absolute;inset:16px -16px -16px 16px;border:1.5px solid rgba(255,255,255,.35);
+  border-radius:20px;z-index:-1;
+}
+
+/* SOBRE */
+.sobre{background:var(--sand);}
+.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.sobre h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin-bottom:24px;}
+.sobre p{color:var(--muted);margin-bottom:18px;font-size:1.04rem;}
+.sobre p strong{color:var(--ink);font-weight:600;}
+.sobre-quote{
+  border-left:3px solid var(--sage);padding:6px 0 6px 22px;margin:26px 0;
+  font-family:'Fraunces',serif;font-style:italic;font-size:1.2rem;color:var(--sage-deep);
+}
+.sobre-photo img{border-radius:18px;box-shadow:var(--shadow-lg);width:100%;object-fit:cover;aspect-ratio:4/3;}
+
+/* ESPECIALIDADES */
+.esp{background:var(--cream);}
+.esp-head{text-align:center;max-width:640px;margin:0 auto 56px;}
+.esp-head h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin-bottom:16px;}
+.esp-head p{color:var(--muted);font-size:1.05rem;}
+.esp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.esp-card{
+  background:var(--white);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);
+  transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;
+}
+.esp-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.esp-card .thumb{height:180px;overflow:hidden;}
+.esp-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:saturate(.92);}
+.esp-card:hover .thumb img{transform:scale(1.06);}
+.esp-card .body{padding:24px 24px 28px;flex:1;}
+.esp-card h3{font-size:1.28rem;margin-bottom:10px;color:var(--sage-deep);}
+.esp-card p{color:var(--muted);font-size:.95rem;}
+
+/* CLINICA */
+.clinica{background:var(--sage-deep);color:var(--white);}
+.clinica .eyebrow{color:#a9bcb0;}
+.clinica-head{max-width:640px;margin-bottom:48px;}
+.clinica-head h2{color:var(--white);font-size:clamp(1.9rem,3.5vw,2.6rem);margin-bottom:16px;}
+.clinica-head p{color:rgba(255,255,255,.82);font-size:1.05rem;}
+.clinica-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;align-items:stretch;}
+.clinica-grid figure{border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.3);margin:0;}
+.clinica-fachada img{width:100%;height:100%;object-fit:cover;min-height:380px;}
+.clinica-mosaico{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;}
+.clinica-mosaico figure{box-shadow:0 10px 26px rgba(0,0,0,.26);}
+.clinica-mosaico img{width:100%;height:100%;object-fit:cover;min-height:120px;}
+.clinica-feats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;}
+.clinica-feat{text-align:center;}
+.clinica-feat .ico{
+  width:52px;height:52px;margin:0 auto 14px;border-radius:50%;
+  background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;
+}
+.clinica-feat h4{font-family:'Fraunces',serif;font-size:1.08rem;color:var(--white);margin-bottom:6px;font-weight:500;}
+.clinica-feat p{color:rgba(255,255,255,.75);font-size:.9rem;}
+
+/* CONTATO */
+.contato{background:var(--sand-2);}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.contato h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin-bottom:20px;}
+.contato .lead{color:var(--muted);font-size:1.06rem;margin-bottom:34px;}
+.contato-item{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start;}
+.contato-item .ci-ico{
+  flex-shrink:0;width:46px;height:46px;border-radius:12px;background:var(--sage);
+  color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.15rem;
+}
+.contato-item .ci-txt strong{display:block;font-weight:600;color:var(--ink);margin-bottom:2px;}
+.contato-item .ci-txt span,.contato-item .ci-txt a{color:var(--muted);font-size:.98rem;}
+.contato-item .ci-txt a:hover{color:var(--sage-dark);}
+.contato-card{background:var(--white);border-radius:20px;padding:38px;box-shadow:var(--shadow-lg);}
+.contato-card h3{font-size:1.4rem;margin-bottom:8px;}
+.contato-card .sub{color:var(--muted);margin-bottom:26px;font-size:.98rem;}
+.hours{list-style:none;margin-bottom:30px;}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #eee7db;font-size:.98rem;}
+.hours li span:first-child{color:var(--ink);font-weight:500;}
+.hours li span:last-child{color:var(--muted);}
+.btn-wpp{
+  width:100%;justify-content:center;background:#25d366;color:var(--white);
+  padding:16px;border-radius:44px;font-weight:600;font-size:1.02rem;
+  display:inline-flex;align-items:center;gap:10px;transition:background .25s,transform .2s;
+}
+.btn-wpp:hover{background:#1fb857;transform:translateY(-2px);}
+.map-wrap{margin-top:26px;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);}
+.map-wrap iframe{width:100%;height:230px;border:0;display:block;}
+
+/* FOOTER */
+footer{background:var(--sage-deep);color:rgba(255,255,255,.8);padding:52px 0 30px;}
+.foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;margin-bottom:34px;}
+.foot-brand .name{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--white);font-weight:600;}
+.foot-brand .role{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#a9bcb0;margin-top:5px;}
+.foot-brand p{margin-top:14px;font-size:.92rem;max-width:320px;color:rgba(255,255,255,.68);}
+.foot-col h5{font-family:'Inter',sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#a9bcb0;margin-bottom:14px;font-weight:600;}
+.foot-col a,.foot-col p{display:block;color:rgba(255,255,255,.78);font-size:.92rem;margin-bottom:9px;}
+.foot-col a:hover{color:var(--white);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;text-align:center;font-size:.84rem;color:rgba(255,255,255,.55);}
+
+/* WHATSAPP FLOAT */
+.wpp-float{
+  position:fixed;bottom:24px;right:24px;z-index:90;width:58px;height:58px;border-radius:50%;
+  background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:1.7rem;box-shadow:0 8px 24px rgba(37,211,102,.45);transition:transform .25s;
+}
+.wpp-float:hover{transform:scale(1.08);}
+
+/* COOKIE BANNER */
+#cookie-banner{
+  position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:120;
+  background:var(--sage-deep);color:rgba(255,255,255,.92);padding:12px 20px;border-radius:44px;
+  display:flex;align-items:center;gap:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+  font-size:.86rem;max-width:calc(100% - 32px);transition:opacity .4s,transform .4s;
+}
+#cookie-banner.hidden{opacity:0;transform:translateX(-50%) translateY(20px);pointer-events:none;}
+#cookie-banner button{
+  background:var(--sage);color:#fff;border:none;padding:8px 18px;border-radius:30px;
+  font-weight:600;font-size:.84rem;cursor:pointer;white-space:nowrap;transition:background .2s;
+}
+#cookie-banner button:hover{background:var(--sage-dark);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* MOBILE */
+@media(max-width:900px){
+  .section{padding:64px 0;}
+  .nav-links{
+    position:fixed;top:0;right:-100%;height:100vh;width:74%;max-width:320px;
+    background:var(--cream);flex-direction:column;justify-content:center;gap:26px;
+    box-shadow:-10px 0 40px rgba(0,0,0,.15);transition:right .35s ease;padding:40px;
+  }
+  .nav-links.open{right:0;}
+  .nav-links a{color:var(--ink)!important;font-size:1.1rem;opacity:1;}
+  .nav-links .nav-cta{color:#fff!important;}
+  .hamburger{display:flex;}
+  .hero{min-height:auto;padding:110px 0 60px;}
+  .hero-inner{grid-template-columns:1fr;gap:40px;text-align:center;}
+  .hero-photo{max-width:320px;margin:0 auto;order:2;}
+  .hero-photo .frame{inset:12px -12px -12px 12px;}
+  .hero-left{order:1;}
+  .hero-left p{margin-left:auto;margin-right:auto;}
+  .hero-badges,.hero-actions{justify-content:center;}
+  .sobre-grid{grid-template-columns:1fr;gap:36px;}
+  .sobre-photo{order:-1;}
+  .esp-grid{grid-template-columns:1fr 1fr;}
+  .clinica-grid{grid-template-columns:1fr;}
+  .clinica-fachada img{min-height:240px;}
+  .clinica-mosaico img{min-height:110px;}
+  .clinica-feats{grid-template-columns:1fr;gap:26px;}
+  .contato-grid{grid-template-columns:1fr;gap:40px;}
+  .foot-grid{flex-direction:column;gap:28px;}
+}
+@media(max-width:560px){
+  .esp-grid{grid-template-columns:1fr;}
+  .hero-badges{gap:20px;}
+  .hero-badge .num{font-size:1.6rem;}
+  .contato-card{padding:26px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo">
+      <span class="name">Aristeu Vedoy</span>
+      <span class="role">Massoterapeuta</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#clinica">A Clínica</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5541999614081?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="nav-cta" target="_blank" rel="noopener">Agendar</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-left reveal">
+      <p class="eyebrow">Desde 1983 em Curitiba</p>
+      <h1>Bem-estar do corpo com quem entende de gente
+        <span>Massoterapia, quiropraxia e tratamento de coluna</span>
+      </h1>
+      <p>Mais de quatro décadas dedicadas a aliviar dores, relaxar a musculatura e devolver qualidade de vida, com técnica, cuidado e atenção individual a cada pessoa.</p>
+      <div class="hero-badges">
+        <div class="hero-badge"><div class="num">+40</div><div class="lbl">anos de experiência</div></div>
+        <div class="hero-badge"><div class="num">7</div><div class="lbl">especialidades</div></div>
+        <div class="hero-badge"><div class="num">Portão</div><div class="lbl">bairro em Curitiba</div></div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://wa.me/5541999614081?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-primary" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a href="#especialidades" class="btn btn-ghost">Ver especialidades</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="img/aristeu_foto.jpg" alt="Aristeu Vedoy, massoterapeuta em Curitiba">
+      <div class="frame"></div>
+    </div>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section class="section sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="reveal">
+      <p class="eyebrow">Sobre o profissional</p>
+      <h2>Uma vida dedicada ao cuidado com o corpo</h2>
+      <p>Natural do <strong>Rio Grande do Sul</strong>, Aristeu Vedoy começou a exercer a profissão de massagista em <strong>Curitiba em julho de 1983</strong>. Desde então, construiu uma trajetória sólida e se tornou referência em sua área, reunindo <strong>mais de 40 anos de experiência</strong>.</p>
+      <p>Ao longo desse tempo, especializou-se no tratamento de coluna, torcicolo, dores musculares e lesões, além de massagens antiestresse, terapêuticas e quiropraxia, sempre unindo a técnica apurada a um atendimento próximo, humano e atento às necessidades de cada pessoa.</p>
+      <div class="sobre-quote">"Viver faz bem para a sua saúde."</div>
+      <p>O trabalho vai além do alívio momentâneo, é sobre bem-estar físico e mental, recuperação e a sensação de voltar a se mover com liberdade.</p>
+    </div>
+    <div class="sobre-photo reveal">
+      <img src="img/clinica_sala.jpg" alt="Sala de atendimento da clínica de Aristeu Vedoy">
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section class="section esp" id="especialidades">
+  <div class="container">
+    <div class="esp-head reveal">
+      <p class="eyebrow">O que oferecemos</p>
+      <h2>Especialidades</h2>
+      <p>Diferentes técnicas para diferentes necessidades, sempre com foco no alívio da dor e na recuperação do bem-estar.</p>
+    </div>
+    <div class="esp-grid">
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_massoterapia.jpg" alt="Massoterapia"></div>
+        <div class="body"><h3>Massoterapia</h3><p>O cuidado por meio de diferentes tipos de massagem, reunindo técnicas que promovem relaxamento, alívio de tensões e equilíbrio para o corpo.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_terapeutica.jpg" alt="Massagem terapêutica"></div>
+        <div class="body"><h3>Terapêutica</h3><p>Massagens voltadas à melhora da saúde e à recuperação do corpo, aliviando desconfortos e devolvendo mobilidade e disposição.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_quiropraxia.jpg" alt="Quiropraxia"></div>
+        <div class="body"><h3>Quiropraxia</h3><p>Trabalho sobre o sistema neuromuscular por meio de movimentos da estrutura esquelética, ajudando a corrigir tensões e a aliviar dores.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_antiestresse.jpg" alt="Massagem antiestresse"></div>
+        <div class="body"><h3>Antiestresse</h3><p>Estimula o relaxamento profundo e a liberação natural de hormônios do bem-estar, reduzindo a tensão acumulada no dia a dia.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_dormuscular.jpg" alt="Tratamento de dor muscular"></div>
+        <div class="body"><h3>Dor muscular</h3><p>Alívio para cansaço nas costas, lombalgias e tensões musculares, com técnicas que relaxam e recuperam a musculatura.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_torcicolo.jpg" alt="Tratamento de torcicolo"></div>
+        <div class="body"><h3>Torcicolo</h3><p>Cuidado específico para a contração involuntária dos músculos do pescoço, aliviando a dor e devolvendo o movimento com conforto.</p></div>
+      </article>
+      <article class="esp-card reveal">
+        <div class="thumb"><img src="img/esp_desportiva.jpg" alt="Massagem desportiva"></div>
+        <div class="body"><h3>Desportiva</h3><p>Ótima aliada para quem pratica exercícios: prepara a musculatura antes da atividade e auxilia na recuperação depois do esforço.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CLINICA -->
+<section class="section clinica" id="clinica">
+  <div class="container">
+    <div class="clinica-head reveal">
+      <p class="eyebrow">Nosso espaço</p>
+      <h2>Um ambiente pensado para o seu conforto</h2>
+      <p>A clínica fica no bairro Portão, em Curitiba, num espaço tranquilo e acolhedor, preparado para que cada atendimento seja um momento de cuidado e descanso.</p>
+    </div>
+    <div class="clinica-grid reveal">
+      <figure class="clinica-fachada"><img src="img/clinica_fachada.jpg" alt="Fachada da clínica na Rua Pedro Hansaul, 161, Portão, Curitiba"></figure>
+      <div class="clinica-mosaico">
+        <figure><img src="img/clinica_espera.jpg" alt="Sala de espera com sofá"></figure>
+        <figure><img src="img/clinica_recepcao.jpg" alt="Recepção da clínica"></figure>
+        <figure><img src="img/clinica_atend2.jpg" alt="Sala de atendimento"></figure>
+        <figure><img src="img/clinica_atend1.jpg" alt="Sala de atendimento com maca"></figure>
+      </div>
+    </div>
+    <div class="clinica-feats reveal">
+      <div class="clinica-feat"><div class="ico">📍</div><h4>Fácil acesso</h4><p>No Portão, um dos bairros centrais de Curitiba.</p></div>
+      <div class="clinica-feat"><div class="ico">🕒</div><h4>Horário flexível</h4><p>Atendimento de segunda a sábado, com hora marcada.</p></div>
+      <div class="clinica-feat"><div class="ico">🤝</div><h4>Atenção individual</h4><p>Cada pessoa recebe um cuidado personalizado.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section contato" id="contato">
+  <div class="container contato-grid">
+    <div class="reveal">
+      <p class="eyebrow">Fale conosco</p>
+      <h2>Agende o seu horário</h2>
+      <p class="lead">Entre em contato para marcar um atendimento ou tirar suas dúvidas. Será um prazer receber você.</p>
+      <div class="contato-item">
+        <div class="ci-ico">📍</div>
+        <div class="ci-txt"><strong>Endereço</strong><span>Rua Pedro Hansaul, 161 · Portão · Curitiba/PR</span></div>
+      </div>
+      <div class="contato-item">
+        <div class="ci-ico">💬</div>
+        <div class="ci-txt"><strong>WhatsApp</strong><a href="https://wa.me/5541999614081?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">(41) 99961-4081</a></div>
+      </div>
+      <div class="contato-item">
+        <div class="ci-ico">📞</div>
+        <div class="ci-txt"><strong>Telefone</strong><a href="tel:+554132293223">(41) 3229-3223</a></div>
+      </div>
+    </div>
+    <div class="contato-card reveal">
+      <h3>Horário de atendimento</h3>
+      <p class="sub">Atendimento com hora marcada.</p>
+      <ul class="hours">
+        <li><span>Segunda a sexta</span><span>9h às 18h30</span></li>
+        <li><span>Sábado</span><span>9h às 15h</span></li>
+        <li><span>Domingo</span><span>Fechado</span></li>
+      </ul>
+      <a href="https://wa.me/5541999614081?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn-wpp" target="_blank" rel="noopener">💬 Agendar pelo WhatsApp</a>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Rua+Pedro+Hansaul,+161,+Portao,+Curitiba+PR&output=embed" loading="lazy" title="Localização da clínica"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">Aristeu Vedoy</div>
+        <div class="role">Massoterapeuta</div>
+        <p>Mais de 40 anos aliviando dores e cuidando do bem-estar de quem confia no nosso trabalho.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navegação</h5>
+        <a href="#sobre">Sobre</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#clinica">A Clínica</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contato</h5>
+        <p>Rua Pedro Hansaul, 161<br>Portão · Curitiba/PR</p>
+        <a href="https://wa.me/5541999614081" target="_blank" rel="noopener">(41) 99961-4081</a>
+        <a href="tel:+554132293223">(41) 3229-3223</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> Aristeu Vedoy · Massoterapeuta em Curitiba · Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5541999614081?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="wpp-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <span>Este site utiliza cookies para melhorar a sua experiência de navegação.</span>
+  <button onclick="aceitarCookies()">Entendi</button>
+</div>
+
+<script>
+  // Menu mobile
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function(){ navLinks.classList.toggle('open'); });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('open'); });
+  });
+
+  // Ano do rodapé
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Cookie banner
+  function aceitarCookies() {
+    localStorage.setItem('cookies_aceitos', '1');
+    var b = document.getElementById('cookie-banner');
+    if (b) b.classList.add('hidden');
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    var banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    if (localStorage.getItem('cookies_aceitos') === '1') {
+      banner.classList.add('hidden');
+    } else {
+      setTimeout(function() {
+        localStorage.setItem('cookies_aceitos', '1');
+        banner.classList.add('hidden');
+      }, 10000);
+    }
+  });
+
+  // Reveal ao rolar
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Nav scrolled
+  window.addEventListener('scroll', () => {
+    document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+
+</body>
+</html>
